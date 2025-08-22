@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GanttMockup } from './icons/GanttMockup';
 import { DashboardMockup } from './icons/DashboardMockup';
@@ -26,17 +25,22 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToLogin, onNavigateToSign
       </header>
 
       {/* Hero Section */}
-      <section className="text-center py-20 md:py-32 px-6 bg-gray-50">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            Organize, Visualize, Achieve.
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
-            The modern, intuitive platform for managing your projects from start to finish. Bring clarity to your team and deliver results faster.
-          </p>
-          <button onClick={onNavigateToSignup} className="mt-8 px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transform hover:scale-105 transition-all duration-150">
-            Get Started for Free
-          </button>
+      <section 
+        className="relative bg-cover bg-center text-center py-20 md:py-32 px-6"
+        style={{ backgroundImage: "url('https://minkaapp.netlify.app/images/hero-background.png')" }}
+      >
+        <div className="relative container mx-auto">
+          <div className="inline-block bg-gray-900/60 backdrop-blur-sm p-8 md:p-12 rounded-xl shadow-lg">
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-md">
+              Organize, Visualize, Achieve.
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-200 drop-shadow-md">
+              The modern, intuitive platform for managing your projects from start to finish. Bring clarity to your team and deliver results faster.
+            </p>
+            <button onClick={onNavigateToSignup} className="mt-8 px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transform hover:scale-105 transition-all duration-150">
+              Get Started for Free
+            </button>
+          </div>
         </div>
       </section>
 
