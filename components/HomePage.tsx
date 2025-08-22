@@ -1,6 +1,4 @@
 import React from 'react';
-import { GanttMockup } from './icons/GanttMockup';
-import { DashboardMockup } from './icons/DashboardMockup';
 import { Footer } from './Footer';
 
 interface HomePageProps {
@@ -62,16 +60,13 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToLogin, onNavigateToSign
               </ul>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <GanttMockup className="max-w-md w-full h-auto shadow-2xl rounded-lg" />
+              <img src="https://minkaapp.netlify.app/images/gantt.png" alt="Dynamic Gantt Chart illustration" className="max-w-md w-full h-auto shadow-2xl rounded-lg" />
             </div>
           </div>
           
           {/* Dashboard Feature */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <DashboardMockup className="max-w-md w-full h-auto shadow-2xl rounded-lg" />
-            </div>
-            <div>
+            <div className="order-2 md:order-2">
               <h3 className="text-3xl font-bold text-gray-900">Insightful Dashboards</h3>
               <p className="mt-4 text-lg text-gray-600">
                 Go beyond timelines with a powerful dashboard that gives you a 360-degree view of your project's health. Monitor key metrics, track task status, and analyze workload distribution to make data-driven decisions.
@@ -81,6 +76,9 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToLogin, onNavigateToSign
                   <li className="flex items-center"><svg className="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Task Status & Workload Breakdowns</li>
                   <li className="flex items-center"><svg className="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>Upcoming Deadline Tracking</li>
               </ul>
+            </div>
+            <div className="order-1 md:order-1 flex justify-center">
+              <img src="https://minkaapp.netlify.app/images/dashboard.png" alt="Insightful Dashboard illustration" className="max-w-md w-full h-auto shadow-2xl rounded-lg" />
             </div>
           </div>
 
