@@ -1,0 +1,7 @@
+
+.auth-body {
+    background-color: #f3f4f6;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(243, 16%, 89%, 1) 0px, transparent 50%),
+        radial-gradient(at 98% 1%, hsla(225, 62%, 88%, 1) 0px, transparent 50%);
+}

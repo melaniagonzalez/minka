@@ -1,0 +1,5 @@
+{
+  "name": "Minka v2",
+  "description": "Minka: A modern, interactive project management application featuring a Gantt chart for visualizing and managing tasks. Users can add, delete, and edit tasks, assign team members, and adjust timelines by dragging and resizing bars directly on the chart. Built with React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
